@@ -1,0 +1,128 @@
+/* {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Playfair Display SC', serif;
+}
+*/
+
+body {
+  background-image: linear-gradient(to bottom right, #f0f0f0, #000000);
+}
+
+.bulgarian {
+  top: 200px;
+  left: 200px;;
+}
+
+.silver {
+  
+  font-size: 41px;
+  line-height:22px;
+  font-weight: 650;
+
+}
+
+.content {
+  height: 100vh;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  perspective: 150rem;
+  height: 20rem;
+  width: 30rem;
+  position: relative;
+}
+.card__side {
+  height: 15rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 30rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+.card__side--front {
+  background-color: #1c1c1c;
+  
+}
+.card__side--back {
+  transform: rotateY(180deg);
+  background-color: #1c1c1c;
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
+}
+.card__cont {
+  height: 15rem;
+  background-color: #1c1c1c;
+  background-image: linear-gradient(45deg,#918c8c, #333333);
+  position: absolute;
+  top: 50px;
+  left: 20px;
+
+}
+.card_bg{
+  height: -15rem;
+  left: 300px;
+  top: 50;
+  position: absolute;
+  text-align: right;
+  text-decoration: none;
+
+}
+.card_a{
+  height: -15rem;
+  left: 350px;
+  bottom: 20px;
+  position: absolute;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.card_l{
+  height: -15rem;
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.card_p{
+  height: 15rem;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.card__cta { 
+  text-decoration: none;
+  color: inherit;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-decoration: none;
+ 
+}
+.card__cta p {
+  margin-left: 1rem;
+}
+.card__cta p > .space {
+  margin-left: 2rem;
+}
+*{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
